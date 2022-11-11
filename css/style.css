@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+body {
+  background-color: #92E3A9;
+}/*# sourceMappingURL=style.css.map */
