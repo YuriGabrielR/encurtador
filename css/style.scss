@@ -1,8 +1,45 @@
-@import "./reset";
-@import "./mixins.scss";
+@import "../sass/reset";
+@import "../sass/mixins";
+@import "../sass/variables";
+
 
 body{
  background-color: #92E3A9;
 }
 
+header{
 
+}
+
+nav{
+    width: 100vw;
+    height: 80px;
+    @include flexCenter(row);
+    justify-content: right
+    
+}
+
+ul{
+    @include flexCenter(row);
+    
+    li{
+       padding: 0px 20px;  
+       
+    }
+}
+
+main{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    @include flexCenter(row);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img--main{
+    max-width: 500px;
+}
+
+.title{
+    color: $primary-color;
+}
