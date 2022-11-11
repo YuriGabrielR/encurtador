@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Alatsi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alatsi&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "Alatsi", sans-serif;
 }
 
 html,
@@ -27,7 +26,7 @@ a {
 }
 
 a:visited {
-  color: black;
+  color: none;
 }
 
 body {
@@ -47,9 +46,24 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: row;
+  padding: 60px;
 }
 ul li {
   padding: 0px 20px;
+}
+
+.link-header {
+  font-family: "Roboto", "sans-serif";
+  color: #263238;
+  font-size: 30px;
+  transition: 0.3s;
+  font-weight: 700;
+}
+.link-header i {
+  font-size: 35px;
+}
+.link-header:hover {
+  color: #DEF7E5;
 }
 
 main {
@@ -68,4 +82,55 @@ main {
 
 .title {
   color: #263238;
+}
+
+.container {
+  padding: 0 40px;
+  margin-left: 100px;
+}
+.container .title {
+  font-family: "Alatsi", "sans-serif";
+  font-size: 2.7em;
+}
+.container .container-input {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+}
+.container .container-input .url-input {
+  width: 400px;
+  height: 30px;
+  border: 1px solid #263238;
+  border-radius: 10px;
+  background-color: #263238;
+  color: #DEF7E5;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.container .container-input .url-input::-moz-placeholder {
+  text-align: center;
+  padding: 15px;
+  color: #DEF7E5;
+  font-size: 15px;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 600;
+}
+.container .container-input .url-input:-ms-input-placeholder {
+  text-align: center;
+  padding: 15px;
+  color: #DEF7E5;
+  font-size: 15px;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 600;
+}
+.container .container-input .url-input::placeholder {
+  text-align: center;
+  padding: 15px;
+  color: #DEF7E5;
+  font-size: 15px;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

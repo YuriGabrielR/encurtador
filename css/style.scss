@@ -7,24 +7,40 @@ body{
  background-color: #92E3A9;
 }
 
-header{
+// header{
 
-}
+// }
 
 nav{
     width: 100vw;
     height: 80px;
     @include flexCenter(row);
-    justify-content: right
-    
+    justify-content: right;
 }
 
 ul{
     @include flexCenter(row);
-    
+    padding: 60px;
     li{
+        
        padding: 0px 20px;  
        
+    }
+}
+
+.link-header{
+    font-family: $txt-description;
+    color:$primary-color;
+    font-size: 30px;
+    transition: 0.3s;
+    font-weight: 700;
+    
+    & i{
+        font-size: 35px;
+    }
+    
+    &:hover{
+        color: $white-color;
     }
 }
 
@@ -42,4 +58,43 @@ main{
 
 .title{
     color: $primary-color;
+}
+
+.container{
+    padding: 0 40px;
+    margin-left: 100px;
+    .title{
+        font-family: $txt-title;
+        font-size: 2.7em;
+    }
+
+
+    .container-input{
+        @include flexCenter(column);
+        padding: 25px;
+
+        .url-input{
+            width: 400px;
+            height: 30px;
+            border: 1px solid $primary-color;
+            border-radius: 10px;
+            background-color: $primary-color;
+            color: $white-color;
+            transition: 0.3s;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+        }
+       
+        
+        .url-input::placeholder{
+            text-align: center;
+            padding: 15px;
+            color: $white-color;
+            font-size: 15px;
+            font-family: $txt-description;
+            font-weight: 600;
+        }
+
+    }
 }
