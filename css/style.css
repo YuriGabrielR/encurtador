@@ -46,7 +46,8 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: row;
-  padding: 60px;
+  padding: 0 60px;
+  height: inherit;
 }
 ul li {
   padding: 0px 20px;
@@ -67,7 +68,7 @@ ul li {
 }
 
 main {
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 80px);
   display: flex;
   align-items: center;
@@ -99,7 +100,7 @@ main {
   padding: 25px;
 }
 .container .container-input .url-input {
-  width: 400px;
+  width: 550px;
   height: 30px;
   border: 1px solid #263238;
   border-radius: 10px;
@@ -133,4 +134,35 @@ main {
   font-size: 15px;
   font-family: "Roboto", "sans-serif";
   font-weight: 600;
+}
+
+.area-btn {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 30px 0px;
+  gap: 40px;
+  align-items: center;
+}
+.area-btn .btn-input {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #DEF7E5;
+  background-color: #263238;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "Roboto", "sans-serif";
+  width: 200px;
+  height: 35px;
+  font-size: 18px;
+  text-align: center;
+  color: #DEF7E5;
+  transition: ease-in-out 0.3s;
+}
+.area-btn .btn-input:hover {
+  background-color: #515B60;
 }/*# sourceMappingURL=style.css.map */
