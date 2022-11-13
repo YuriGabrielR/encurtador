@@ -65,9 +65,11 @@ main{
 .container{
     padding: 0 40px;
     margin-left: 100px;
+    
     .title{
         font-family: $txt-title;
         font-size: 2.7em;
+        text-align: center;
     }
 
 
@@ -76,7 +78,7 @@ main{
         padding: 25px;
 
         .url-input{
-            width: 550px;
+            width: 700px;
             height: 30px;
             border: 1px solid $primary-color;
             border-radius: 10px;
@@ -84,7 +86,7 @@ main{
             color: $white-color;
             transition: 0.3s;
             text-align: center;
-            font-size: 15px;
+            font-size: 18px;
             font-weight: 600;
         }
        
@@ -93,7 +95,7 @@ main{
             text-align: center;
             padding: 15px;
             color: $white-color;
-            font-size: 15px;
+            font-size: 18px;
             font-family: $txt-description;
             font-weight: 600;
         }
@@ -104,7 +106,7 @@ main{
 .area-btn{
     @include flexCenter(row);
     padding: 30px 0px;
-    gap: 40px;
+    gap: 10px;
     align-items: center;
     
 
