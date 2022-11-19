@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,43 +9,53 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
                 <li><a class="link-header" target="_blank" href="https://developers.rebrandly.com/docs"> API</a></li>
-                <li><a target="_blank" class="link-header" href="https://github.com/YuriGabrielR/encurtador"> <i class="fa-brands fa-github"></i></a></li>
-                <li><a target="_blank" class="link-header" href="https://www.linkedin.com/in/yurigabrielramos"> <i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a target="_blank" class="link-header" href="https://github.com/YuriGabrielR/encurtador"> <i
+                            class="fa-brands fa-github"></i></a></li>
+                <li><a target="_blank" class="link-header" href="https://www.linkedin.com/in/yurigabrielramos"> <i
+                            class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </nav>
-        <main>
-            <div class="container">
+    </header>
+    <main>
+        <div class="container">
+
+
+            <div class="container-input">
                 <h1 class="title"> <i class="fa-solid fa-link"></i> ENCURTADOR DE LINK </h1>
+                <input class="url-input" type="text" placeholder="Insira sua URL aqui:">
 
-                <div class="container-input">
-                    <input class="url-input" type="text" placeholder="Insira sua URL aqui:">
-
-                    <div class="area-btn">
+                <div class="area-btn">
                     <button id="encurtar" class="btn-input"><i class="fa-solid fa-scissors"></i> Encurtar</button>
                     <button id="copiar" class="btn-input">Copiar <i class="fa-solid fa-copy"></i></button>
-                    <button id="limpar" class="btn-input">Limpar <i class="fa-solid fa-trash"></i></button>
-                    </div>
+                    <button id="limpar" class="btn-input">Limpar <i class="fa-solid fa-eraser"></i></button>
                 </div>
             </div>
 
-
-            <div class="img-area">
+            <div class="img-areaMain">
                 <img class="img--main" src="./images/image-page.png" alt="ilustracao-flat-internet">
             </div>
-        </main>
-        
-    </header>
+        </div>
+
+
+
+
+
+    </main>
 
     <footer>
-
+        <p> Desenvolvido por <a target="_blank" href="https://github.com/YuriGabrielR"> Yuri Ramos © </a> </p>
     </footer>
 
     <script type="text/javascript" src="./js/script.js"></script>
+    <script type="text/javascript" src="./js/theme.js"></script>
+
     <script src="https://kit.fontawesome.com/f3b59ce49d.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

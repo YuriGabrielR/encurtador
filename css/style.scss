@@ -54,7 +54,10 @@ main{
 }
 
 .img--main{
-    max-width: calc(500px)
+    max-width:100%;
+    width:500px;
+    height: auto;
+
     
 }
 
@@ -64,7 +67,11 @@ main{
 
 .container{
     padding: 0 40px;
-    margin-left: 100px;
+    width: 100%;
+    height: 100%;
+    @include flexCenter(row);
+    gap: 50px;
+    flex-wrap: wrap;
     
     .title{
         font-family: $txt-title;
@@ -75,8 +82,9 @@ main{
 
     .container-input{
         @include flexCenter(column);
+        justify-content: center;
         padding: 25px;
-
+        
         .url-input{
             width: 700px;
             height: 30px;
@@ -100,11 +108,13 @@ main{
             font-weight: 600;
         }
 
+        
     }
 }
 
 .area-btn{
     @include flexCenter(row);
+    flex-wrap: wrap;
     padding: 30px 0px;
     gap: 10px;
     align-items: center;
@@ -134,3 +144,118 @@ main{
         
     
 }
+
+footer{
+    text-align: center;
+    margin-top: -35px;
+
+    p{
+        color: $primary-color;
+        font-family: $txt-title;
+        font-size: 17px;
+        
+        a{
+            color: $primary-color;
+            transition: 0.4s ease-in-out;
+            position: relative;
+            
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                width:0%;
+                background-color: $primary-color;
+                transition: 0.3s ease-in-out;
+
+            }
+            
+            &:hover::after{
+                width: 100%;
+            }
+        }   
+    }
+
+}
+
+
+@media(min-width:320px) and (max-width:480px){
+    main{
+        justify-content: center;
+
+    }
+    .container{
+        padding: 0px;
+        width: 100%;
+ 
+        
+
+        .title{
+            width: 100%;
+            font-size: 26px;
+            text-align: center;
+            
+        }
+
+        .container-input{
+            .url-input{
+                width: 270px;
+            }
+
+            
+        }
+
+        .area-btn{
+            @include flexCenter(column)
+            
+        }
+    }
+
+    
+}
+
+@media(min-width:480px) and (max-width:781px){
+    .container-input{
+        width: 100%;
+
+
+        .url-input{
+
+        }
+    }
+
+    
+}
+
+
+
+@media(max-width:1189px){
+    .container{
+
+     .container-input {
+        width: 100%;
+        padding:40px 0px;
+     }
+    
+     .img-areaMain{
+        
+        width: 100%;
+        text-align: center;
+        
+        .img--main{
+            width: 420px;
+            margin-top: -140px;
+        }
+     }
+
+    }
+
+    footer{
+        margin-top: -30px ;
+
+    }
+}
+
+
+
