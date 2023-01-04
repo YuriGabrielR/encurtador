@@ -31,6 +31,58 @@ a:visited {
 
 body {
   background-color: #92E3A9;
+  transition: all 0.5s;
+}
+
+body.darkmode {
+  background-color: #263238;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .labelTheme .ball {
+  transform: translateX(41px);
+}
+
+.labelTheme {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  background-color: #263238;
+  height: 35px;
+  width: 80px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.labelTheme .fas {
+  font-size: 22px;
+  color: #DEF7E5;
+}
+.labelTheme .ball {
+  width: 25px;
+  height: 27px;
+  background-color: #DEF7E5;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+.labelTheme .ball.darkmode {
+  background-color: #263238;
+}
+
+.labelTheme.darkmode {
+  background-color: #92E3A9;
+}
+.labelTheme.darkmode .fas {
+  color: #263238;
 }
 
 nav {
@@ -39,14 +91,15 @@ nav {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: right;
+  justify-content: space-around;
+  width: 100%;
 }
 
 ul {
   display: flex;
   align-items: center;
   flex-direction: row;
-  padding: 0 60px;
+  justify-content: space-between;
   height: inherit;
 }
 ul li {
@@ -59,11 +112,20 @@ ul li {
   font-size: 30px;
   transition: 0.3s;
   font-weight: 700;
+  transition: all 0.5s;
 }
 .link-header i {
   font-size: 35px;
 }
 .link-header:hover {
+  color: #DEF7E5;
+}
+
+.link-header.darkmode {
+  color: #92E3A9;
+}
+
+.link-header.darkmode:hover {
   color: #DEF7E5;
 }
 
@@ -85,6 +147,11 @@ main {
 
 .title {
   color: #263238;
+  transition: all 0.5s;
+}
+
+.title.darkmode {
+  color: #92E3A9;
 }
 
 .container {
@@ -121,6 +188,7 @@ main {
   font-size: 18px;
   font-weight: 600;
   outline: none;
+  transition: all 0.5s;
 }
 .container .container-input .url-input::-moz-placeholder {
   text-align: center;
@@ -145,6 +213,19 @@ main {
   font-size: 18px;
   font-family: "Roboto", "sans-serif";
   font-weight: 600;
+}
+.container .url-input.darkmode {
+  border: 1px solid #263238;
+  background-color: #92E3A9;
+}
+.container .url-input.darkmode::-moz-placeholder {
+  color: #263238;
+}
+.container .url-input.darkmode:-ms-input-placeholder {
+  color: #263238;
+}
+.container .url-input.darkmode::placeholder {
+  color: #263238;
 }
 
 .area-btn {
