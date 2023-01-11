@@ -180,17 +180,25 @@ main{
 
         }
 
+
+        .url-input.darkmode{
+            border: 1px solid $primary-color;
+            background-color: $main-color;
+            color: $primary-color;
+    
+       }
+    
+       .url-input.darkmode::placeholder{
+        border: 1px solid $primary-color;
+        background-color: $main-color;
+        color: $primary-color;
+
+   }
         
     }
 
-    .url-input.darkmode{
-        border: 1px solid $primary-color;
-        background-color: $main-color;
-   }
+   
 
-   .url-input.darkmode::placeholder{
-    color: $primary-color;
-}
 }
 
 
@@ -260,6 +268,14 @@ footer{
         }   
     }
 
+
+    .footer--description.darkmode{
+    color: $main-color;
+    }
+
+    .gitFooter.darkmode{
+        color: $main-color;
+    }
 }
 
 

@@ -214,17 +214,24 @@ main {
   font-family: "Roboto", "sans-serif";
   font-weight: 600;
 }
-.container .url-input.darkmode {
+.container .container-input .url-input.darkmode {
   border: 1px solid #263238;
   background-color: #92E3A9;
-}
-.container .url-input.darkmode::-moz-placeholder {
   color: #263238;
 }
-.container .url-input.darkmode:-ms-input-placeholder {
+.container .container-input .url-input.darkmode::-moz-placeholder {
+  border: 1px solid #263238;
+  background-color: #92E3A9;
   color: #263238;
 }
-.container .url-input.darkmode::placeholder {
+.container .container-input .url-input.darkmode:-ms-input-placeholder {
+  border: 1px solid #263238;
+  background-color: #92E3A9;
+  color: #263238;
+}
+.container .container-input .url-input.darkmode::placeholder {
+  border: 1px solid #263238;
+  background-color: #92E3A9;
   color: #263238;
 }
 
@@ -286,6 +293,12 @@ footer p a::after {
 }
 footer p a:hover::after {
   width: 100%;
+}
+footer .footer--description.darkmode {
+  color: #92E3A9;
+}
+footer .gitFooter.darkmode {
+  color: #92E3A9;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {

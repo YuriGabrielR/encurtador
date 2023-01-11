@@ -18,7 +18,7 @@ function encurtar(){
     }
     
 
-    //Requisição
+//Requisição
     const urlRequest ={
         destination:url,
         domain:{fullName:"rebrand.ly"}
